@@ -930,3 +930,15 @@ footer {
   .recordings-grid { grid-template-columns: 1fr; }
   .rec-thumb       { width: 70px; font-size: 22px; }
 }
+
+/* Clickable how-card */
+.how-card-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border-color: var(--purple-mid);
+}
+.how-card-link:hover {
+  border-color: var(--accent-light);
+  background: #1e1b4b;
+}
