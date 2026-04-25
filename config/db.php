@@ -12,10 +12,10 @@ if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === '127.0.0.
 
     // ── PRODUCTION ────────────────────────
     // Update these when you deploy to a live host
-    $host = "your_host";
-    $user = "your_db_user";
-    $pass = "your_db_pass";
-    $db   = "your_db_name";
+   $host = "sql306.infinityfree.com";
+   $user = "if0_41753756";
+   $pass = "veqq2TXu9xQd";
+   $db   = "if0_41753756_smartphysics";
 
 }
 
