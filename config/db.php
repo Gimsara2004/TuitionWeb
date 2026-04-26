@@ -1,8 +1,6 @@
 <?php
-// Auto-detect environment
 if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === '127.0.0.1') {
 
-    // ── LOCAL (XAMPP) ──────────────────────
     $host = "localhost";
     $user = "root";
     $pass = "";
@@ -10,12 +8,10 @@ if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === '127.0.0.
 
 } else {
 
-    // ── PRODUCTION ────────────────────────
-    // Update these when you deploy to a live host
-   $host = "sql306.infinityfree.com";
-   $user = "if0_41753756";
-   $pass = "veqq2TXu9xQd";
-   $db   = "if0_41753756_smartphysics";
+    $host = "sql313.infinityfree.com";
+    $user = "if0_41753756";
+    $pass = "veqq2TXu9xQd";
+    $db   = "if0_41753756_smartphysics";
 
 }
 

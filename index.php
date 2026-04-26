@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart Physics A/L Tuition — Negombo</title>
-  <meta name="description" content="Enroll in 2025/2026 A/L Physics classes in Negombo with expert tutor Induja Dayarathne. Small batches, proven results." />
+  <title>Smart Physics A/L Tuition — Gampaha</title>
+  <meta name="description" content="Enroll in 2025/2026 A/L Physics classes in Gampaha with expert tutor Induja Dayarathne. Small batches, proven results." />
   <meta name="author" content="Smart Physics A/L Tuition" />
-  <meta name="keywords" content="A/L Physics tuition, Negombo, Physics, Sri Lanka, Induja Dayarathne" />
+  <meta name="keywords" content="A/L Physics tuition, Gampaha, Physics, Sri Lanka, Induja Dayarathne" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
