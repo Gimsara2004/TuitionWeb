@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart Physics A/L Tuition — Gampaha</title>
-  <meta name="description" content="Enroll in 2025/2026 A/L Physics classes in Gampaha with expert tutor Induja Dayarathne. Small batches, proven results." />
+  <title>Smart Physics A/L Tuition — Negombo</title>
+  <meta name="description" content="Enroll in 2025/2026 A/L Physics classes in Negombo with expert tutor Induja Dayarathne. Small batches, proven results." />
   <meta name="author" content="Smart Physics A/L Tuition" />
-  <meta name="keywords" content="A/L Physics tuition, Gampaha, Physics, Sri Lanka, Induja Dayarathne" />
+  <meta name="keywords" content="A/L Physics tuition, Negombo, Physics, Sri Lanka, Induja Dayarathne" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -303,6 +303,33 @@
         <p>smartphysics@gmail.com<br>Reply within 24 hours</p>
       </div>
     </div>
+
+    <!-- CONTACT FORM -->
+    <div class="form-card" style="margin-top:48px; max-width:680px; margin-left:auto; margin-right:auto;">
+      <h3 style="font-size:1.3rem; margin-bottom:20px; color:#e2d9f3;">Send us a message</h3>
+      <form id="contact-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="cname">Your Name *</label>
+            <input type="text" id="cname" name="cname" placeholder="Full name" required/>
+          </div>
+          <div class="form-group">
+            <label for="cphone">Phone Number</label>
+            <input type="tel" id="cphone" name="cphone" placeholder="07X XXX XXXX"/>
+          </div>
+          <div class="form-group full">
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" name="cemail" placeholder="your@email.com"/>
+          </div>
+          <div class="form-group full">
+            <label for="cmsg">Your Message *</label>
+            <textarea id="cmsg" name="cmsg" rows="4" placeholder="Type your message here..." required></textarea>
+          </div>
+        </div>
+        <div id="contact-msg" style="display:none;"></div>
+        <button type="submit" class="submit-btn" id="contact-btn">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- WAVE DIVIDER -->
@@ -369,44 +396,6 @@
 
   <script src="js/main.js"></script>
   <script>
-    // AJAX Enrollment form
-    document.getElementById('enroll-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const btn = document.getElementById('enroll-btn');
-      btn.textContent = 'Submitting...';
-      btn.disabled = true;
-
-      fetch('enroll.php', { method: 'POST', body: new FormData(this) })
-        .then(r => r.json())
-        .then(data => {
-          const msg = document.getElementById('enroll-msg');
-          msg.style.display = 'block';
-          if (data.status === 'success') {
-            msg.style.background = 'rgba(52,211,153,0.15)';
-            msg.style.color      = '#34d399';
-            msg.style.border     = '1px solid rgba(52,211,153,0.3)';
-            msg.innerHTML = '<i class="fas fa-check-circle"></i> ' + data.message;
-            document.getElementById('enroll-form').reset();
-            showToast('🎉 Enrollment submitted! We\'ll contact you soon.', '#34d399');
-          } else {
-            msg.style.background = 'rgba(248,113,113,0.15)';
-            msg.style.color      = '#f87171';
-            msg.style.border     = '1px solid rgba(248,113,113,0.3)';
-            msg.innerHTML = '<i class="fas fa-exclamation-circle"></i> ' + data.message;
-          }
-          msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        })
-        .catch(() => {
-          const msg = document.getElementById('enroll-msg');
-          msg.style.display = 'block';
-          msg.style.color   = '#f87171';
-          msg.textContent   = 'Network error. Please try again.';
-        })
-        .finally(() => {
-          btn.textContent = 'Submit enrollment request';
-          btn.disabled    = false;
-        });
-    });
 
     function showToast(msg, color) {
       const t = document.getElementById('toast');
