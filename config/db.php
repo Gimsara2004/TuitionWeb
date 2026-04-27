@@ -8,10 +8,10 @@ if ($_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === '127.0.0.
 
 } else {
 
-    $host = "sql313.infinityfree.com";
-    $user = "if0_41753756";
-    $pass = "veqq2TXu9xQd";
-    $db   = "if0_41753756_smartphysics";
+    $host = "sql208.infinityfree.com";
+    $user = "if0_41769123";
+    $pass = "vokEWPvZDo4ULS";
+    $db   = "if0_41769123_smarttuition";
 
 }
 
